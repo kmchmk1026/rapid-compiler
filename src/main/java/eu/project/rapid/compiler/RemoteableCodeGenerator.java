@@ -143,12 +143,14 @@ public class RemoteableCodeGenerator {
      * @param args the command line arguments -
      */
     public static void main(String[] args) {
-        if (args.length == 0) {
-            usage();
-        } else {
-            new RemoteableCodeGenerator(args[0]);
-        }
+//        if (args.length == 0) {
+//            usage();
+//        } else {
+//            new RemoteableCodeGenerator(args[0]);
+//        }
+        new RemoteableCodeGenerator("C:\\Users\\Chanaka\\Desktop\\delete\\NQueens.java");//this is a new line
     }
+//    }
 
     private static void usage() {
         System.out.println("usage: java -jar rapid-acceleration-compiler.jar <path_of_your_project>");

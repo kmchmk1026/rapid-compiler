@@ -42,7 +42,7 @@ class MethodData {
         String annotationString = annotation.toString();
         // Get only this part: computeIntensive = true, dataIntensive = false
         annotationString = annotationString.substring(annotationString.indexOf("(") + 1, annotationString.indexOf(")"));
-
+        
         String[] annotationElements = annotationString.split(",");
         Pattern pattern = Pattern.compile("\\s*([\\w]+)\\s*=\\s*([\\w]+)\\s*");
         for (String element : annotationElements) {

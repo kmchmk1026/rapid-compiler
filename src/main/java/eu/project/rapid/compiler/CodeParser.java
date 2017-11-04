@@ -26,7 +26,7 @@ public class CodeParser<A> extends VoidVisitorAdapter<A> {
 
     List<MethodData> parse(Path input) {
         CompilationUnit cu;
-
+        
         try (FileInputStream in = new FileInputStream(input.toString())) {
             // parse the file
             cu = JavaParser.parse(in);
